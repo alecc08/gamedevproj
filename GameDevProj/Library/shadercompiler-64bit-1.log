@@ -1,29 +1,7 @@
 Base path: D:/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-5988
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-6076
 Cmd: getPlatforms
-Cmd: preprocess
-  insize=2486 outsize=1156 ok=1
 Cmd: compileSnippet
-  api=4 type=0 insize=1632 outsize=1583 kw= pd= ok=1
+  api=4 type=0 insize=1706 outsize=1290 kw=SOFTPARTICLES_OFF pd= ok=1
 Cmd: compileSnippet
-  api=4 type=1 insize=1632 outsize=1509 kw= pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=1705 outsize=1290 kw=SOFTPARTICLES_OFF pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=1705 outsize=924 kw=SOFTPARTICLES_OFF pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=938 outsize=5206 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE _NORMALMAP pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=938 outsize=7733 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE _NORMALMAP pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=938 outsize=4938 kw=POINT SHADOWS_CUBE SHADOWS_SOFT _NORMALMAP pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=938 outsize=8172 kw=POINT SHADOWS_CUBE SHADOWS_SOFT _NORMALMAP pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=4837 outsize=4020 kw=SPOT pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=4837 outsize=3232 kw=SPOT pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=4837 outsize=4020 kw=POINT pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=4837 outsize=2736 kw=POINT pd= ok=1
+  api=4 type=1 insize=1706 outsize=868 kw=SOFTPARTICLES_OFF pd= ok=1
