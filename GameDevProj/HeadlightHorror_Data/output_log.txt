@@ -11,31 +11,62 @@ Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHor
 Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.069 seconds
+- Completed reload, in  0.106 seconds
 desktop: 1920x1080 60Hz; virtual: 3600x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\System.dll (this message is harmless)
-10/22/15 23:41:15: [CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_7.dll
+Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Boo.Lang.dll (this message is harmless)
+10/28/15 01:33:27: [CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_7.dll
 
  
 (Filename:  Line: 46)
+
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating volume controller...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2f90 -> priority: 1 
-  Thread -> id: 27ec -> priority: 1 
-10/22/15 23:41:45: OVR Error:
-  Code: -1003 -- ovrError_Timeout
-  Description: Semaphore WaitForMultipleObjects
-  OVRTime: 495946.385324
-  Time: 2015-10-22 19:41:45 [879:721:100]
-
+  Thread -> id: db0 -> priority: 1 
+  Thread -> id: 2964 -> priority: 1 
+10/28/15 01:33:43: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x702: C2S=48.108 (22.6788-1393.61), S2C=15.5933 (5.66969-387.807), RTT=242.87 (127.852-9247.27), Runtime=179.169 (88.7307-9126.5), IPC=63.7012 (32.6007-1406.65) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
  
-(Filename:  Line: 46)
+(Filename:  Line: 48)
+
+10/28/15 01:33:53: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x747: C2S=49.8709 (27.2145-1239.96), S2C=20.4731 (5.95318-3139.31), RTT=234.251 (127.001-3418.26), Runtime=163.907 (89.5811-2165.26), IPC=70.344 (36.853-3178.43) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
+10/28/15 01:34:03: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=44.1821 (26.0806-2015.58), S2C=13.3781 (5.66969-174.91), RTT=205.62 (129.552-2275.53), Runtime=148.059 (90.4316-1676.24), IPC=57.5602 (34.5851-2028.33) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
+10/28/15 01:34:13: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x750: C2S=41.0006 (25.2301-936.916), S2C=14.5446 (5.95318-515.375), RTT=197.808 (126.718-2023.51), Runtime=142.263 (86.1793-1772.63), IPC=55.5452 (34.5851-945.988) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
+10/28/15 01:34:23: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=40.9641 (25.7971-578.025), S2C=13.1784 (5.66969-221.968), RTT=202.708 (128.985-1993.46), Runtime=148.565 (91.5655-1935.07), IPC=54.1425 (35.4356-587.38) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
+10/28/15 01:34:33: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x750: C2S=56.6931 (23.2457-5564.23), S2C=13.3102 (5.66969-208.361), RTT=220.193 (124.166-6140.28), Runtime=150.19 (82.494-3775.16), IPC=70.0033 (36.0025-5583.23) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
+10/28/15 01:34:43: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=40.5474 (25.7971-1027.35), S2C=13.3936 (5.66969-199.29), RTT=194.239 (125.584-1192.34), Runtime=140.298 (87.5967-928.695), IPC=53.941 (34.0181-1043.22) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
 

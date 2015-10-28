@@ -69,9 +69,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Campfire\Script\FireLightScript.cs" />
-    <Compile Include="Assets\LoadingScript.cs" />
-    <Compile Include="Assets\MainMenuScript.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRDebugHeadController.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPlatformMenu.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRTouchpad.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRVolumeControl.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRChromaticAberration.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRDebugGraph.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRInputControl.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRModeParms.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRMonoscopic.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRResetOrientation.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRWaitCursor.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRInput.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVROnCompleteListener.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRPlugin.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRProfile.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRDebugInfo.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRGamepadController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\BlurEffect.cs" />
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\ContrastStretchEffect.cs" />
@@ -86,9 +111,18 @@
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\SepiaToneEffect.cs" />
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
+    <Compile Include="Assets\Scripts\GameConstants.cs" />
+    <Compile Include="Assets\Scripts\LoadingSceneScript.cs" />
+    <Compile Include="Assets\Scripts\LoadingScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu\TitleSpin.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
+    <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
+    <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
+    <None Include="Assets\Plugins\Android\assets\placeholder.txt" />
     <None Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
     <None Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
     <None Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
