@@ -12,7 +12,7 @@ public class MainMenuScript : MonoBehaviour {
 	void Update () {
 	    if(Input.anyKey)
         {
-            PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, GameConstants.MAIN_MENU_LEVEL);
+            PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, GameConstants.LEVEL_1);
             Application.LoadLevel(GameConstants.LOADING);
         }
 	}
