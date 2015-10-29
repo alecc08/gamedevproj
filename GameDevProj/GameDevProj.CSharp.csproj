@@ -117,6 +117,9 @@
     <Compile Include="Assets\Scripts\MainMenu\TitleSpin.cs" />
     <Compile Include="Assets\Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\torch\scene\script\TorchSlider.cs" />
+    <Compile Include="Assets\torch\scene\script\Torchslider2.cs" />
+    <Compile Include="Assets\torch\scripts\Torchelight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
@@ -176,6 +179,7 @@
     <None Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
     <None Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\torch\readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
