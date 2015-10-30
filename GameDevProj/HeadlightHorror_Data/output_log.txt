@@ -7,26 +7,26 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     1990 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.106 seconds
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.092 seconds
 desktop: 1920x1080 60Hz; virtual: 3600x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\System.dll (this message is harmless)
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityScript.Lang.dll (this message is harmless)
-Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Boo.Lang.dll (this message is harmless)
-10/28/15 01:33:27: [CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_7.dll
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: D:\School\GameDevProject\gamedevproj\gamedevproj\HeadlightHorror_Data\Managed\Boo.Lang.dll (this message is harmless)
+10/30/15 00:57:48: [CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_7.dll
 
  
 (Filename:  Line: 46)
@@ -40,33 +40,187 @@ Creating volume controller...
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: db0 -> priority: 1 
-  Thread -> id: 2964 -> priority: 1 
-10/28/15 01:33:43: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x702: C2S=48.108 (22.6788-1393.61), S2C=15.5933 (5.66969-387.807), RTT=242.87 (127.852-9247.27), Runtime=179.169 (88.7307-9126.5), IPC=63.7012 (32.6007-1406.65) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+  Thread -> id: 212c -> priority: 1 
+  Thread -> id: 10d4 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.653500 ms
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 257.
+Total: 0.364277 ms (FindLiveObjects: 0.017576 ms CreateObjectMapping: 0.023529 ms MarkObjects: 0.184548 ms  DeleteObjects: 0.138056 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.943553 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.465481 ms (FindLiveObjects: 0.047341 ms CreateObjectMapping: 0.043656 ms MarkObjects: 0.250316 ms  DeleteObjects: 0.123599 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.668873 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.420691 ms (FindLiveObjects: 0.044223 ms CreateObjectMapping: 0.037703 ms MarkObjects: 0.234725 ms  DeleteObjects: 0.103188 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.643359 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.449889 ms (FindLiveObjects: 0.043373 ms CreateObjectMapping: 0.036852 ms MarkObjects: 0.242379 ms  DeleteObjects: 0.126717 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.874116 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.439117 ms (FindLiveObjects: 0.045924 ms CreateObjectMapping: 0.035435 ms MarkObjects: 0.245781 ms  DeleteObjects: 0.111409 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.782550 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.465481 ms (FindLiveObjects: 0.047058 ms CreateObjectMapping: 0.045357 ms MarkObjects: 0.265058 ms  DeleteObjects: 0.107440 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.654699 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.478238 ms (FindLiveObjects: 0.053862 ms CreateObjectMapping: 0.038837 ms MarkObjects: 0.267892 ms  DeleteObjects: 0.117079 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.762140 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.494964 ms (FindLiveObjects: 0.044790 ms CreateObjectMapping: 0.036852 ms MarkObjects: 0.271294 ms  DeleteObjects: 0.140608 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.751934 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.471718 ms (FindLiveObjects: 0.043373 ms CreateObjectMapping: 0.034868 ms MarkObjects: 0.269310 ms  DeleteObjects: 0.123032 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.886589 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.476254 ms (FindLiveObjects: 0.047625 ms CreateObjectMapping: 0.040538 ms MarkObjects: 0.278948 ms  DeleteObjects: 0.108291 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.020110 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.492979 ms (FindLiveObjects: 0.045641 ms CreateObjectMapping: 0.034301 ms MarkObjects: 0.289437 ms  DeleteObjects: 0.122748 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.780566 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.460662 ms (FindLiveObjects: 0.045074 ms CreateObjectMapping: 0.035152 ms MarkObjects: 0.270160 ms  DeleteObjects: 0.109708 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.773479 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.484475 ms (FindLiveObjects: 0.049326 ms CreateObjectMapping: 0.037419 ms MarkObjects: 0.285468 ms  DeleteObjects: 0.111125 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.726987 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.468883 ms (FindLiveObjects: 0.043940 ms CreateObjectMapping: 0.035435 ms MarkObjects: 0.278381 ms  DeleteObjects: 0.110275 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.734925 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.490711 ms (FindLiveObjects: 0.045074 ms CreateObjectMapping: 0.043373 ms MarkObjects: 0.292839 ms  DeleteObjects: 0.108858 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.716215 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.485325 ms (FindLiveObjects: 0.045357 ms CreateObjectMapping: 0.035435 ms MarkObjects: 0.288303 ms  DeleteObjects: 0.115378 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.733508 ms
+Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
+Total: 0.488443 ms (FindLiveObjects: 0.045074 ms CreateObjectMapping: 0.036002 ms MarkObjects: 0.298792 ms  DeleteObjects: 0.108007 ms)
+
+10/30/15 00:58:19: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=35.85 (27.498-766.259), S2C=16.2235 (8.22105-86.1793), RTT=165.489 (136.073-1346.27), Runtime=113.416 (91.282-553.645), IPC=52.0736 (38.5539-792.623) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
  
 (Filename:  Line: 48)
 
-10/28/15 01:33:53: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x747: C2S=49.8709 (27.2145-1239.96), S2C=20.4731 (5.95318-3139.31), RTT=234.251 (127.001-3418.26), Runtime=163.907 (89.5811-2165.26), IPC=70.344 (36.853-3178.43) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+10/30/15 00:58:29: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x750: C2S=36.0615 (26.3641-873.132), S2C=16.5665 (8.22105-640.392), RTT=165.219 (133.521-2460.36), Runtime=112.591 (89.2976-1484.04), IPC=52.628 (36.853-1173.63) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
  
 (Filename:  Line: 48)
 
-10/28/15 01:34:03: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=44.1821 (26.0806-2015.58), S2C=13.3781 (5.66969-174.91), RTT=205.62 (129.552-2275.53), Runtime=148.059 (90.4316-1676.24), IPC=57.5602 (34.5851-2028.33) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+10/30/15 00:58:39: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=34.0072 (27.7815-206.944), S2C=15.68 (8.50454-388.374), RTT=159.666 (135.222-852.438), Runtime=109.978 (88.4472-445.921), IPC=49.6872 (37.9869-442.236) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
  
 (Filename:  Line: 48)
 
-10/28/15 01:34:13: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x750: C2S=41.0006 (25.2301-936.916), S2C=14.5446 (5.95318-515.375), RTT=197.808 (126.718-2023.51), Runtime=142.263 (86.1793-1772.63), IPC=55.5452 (34.5851-945.988) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
- 
-(Filename:  Line: 48)
-
-10/28/15 01:34:23: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=40.9641 (25.7971-578.025), S2C=13.1784 (5.66969-221.968), RTT=202.708 (128.985-1993.46), Runtime=148.565 (91.5655-1935.07), IPC=54.1425 (35.4356-587.38) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
- 
-(Filename:  Line: 48)
-
-10/28/15 01:34:33: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x750: C2S=56.6931 (23.2457-5564.23), S2C=13.3102 (5.66969-208.361), RTT=220.193 (124.166-6140.28), Runtime=150.19 (82.494-3775.16), IPC=70.0033 (36.0025-5583.23) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
- 
-(Filename:  Line: 48)
-
-10/28/15 01:34:43: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=40.5474 (25.7971-1027.35), S2C=13.3936 (5.66969-199.29), RTT=194.239 (125.584-1192.34), Runtime=140.298 (87.5967-928.695), IPC=53.941 (34.0181-1043.22) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+10/30/15 00:58:49: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x751: C2S=36.3023 (26.3641-1580.14), S2C=14.5426 (7.3706-117.93), RTT=164.056 (135.222-3955.18), Runtime=113.211 (90.1481-2348.95), IPC=50.8449 (36.853-1606.22) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
  
 (Filename:  Line: 48)
 
