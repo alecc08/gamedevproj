@@ -363,8 +363,9 @@ public class OVRPlayerController : MonoBehaviour
 		Vector2 secondaryAxis = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
 
 		euler.y += secondaryAxis.x * rotateInfluence;
+        euler.x -= secondaryAxis.y * rotateInfluence;
 
-		transform.rotation = Quaternion.Euler(euler);
+        transform.rotation = Quaternion.Euler(euler);
 #endif
 	}
 
