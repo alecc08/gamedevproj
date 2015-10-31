@@ -14,7 +14,16 @@ public class MainCharacterScript : MonoBehaviour {
 
     GameObject currentReadable = null;
 
-    const string SMALL_UI_TEXT = "(E) To interact with ";
+    bool buttonOneDown = false;
+    bool buttonOneWasDown = false;
+    bool buttonTwoDown = false;
+    bool buttonTwoWasDown = false;
+    bool buttonThreeDown = false;
+    bool buttonThreeWasDown = false;
+    bool buttonFourDown = false;
+    bool buttonFourWasDown = false;
+
+    const string SMALL_UI_TEXT = "(X) ";
 
     bool faceUiSmallActive = false;
     bool faceUiLargeActive = false;
@@ -33,12 +42,15 @@ public class MainCharacterScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        UpdateGamepadButtons();
         faceUiSmallActive = false;
         faceUiLargeActive = false;
-        if (Input.GetKeyUp(KeyCode.F))
+        if (Input.GetKeyUp(KeyCode.F) || buttonFourClicked())
         {
             spotLight.enabled = !spotLight.enabled;
         }
+        
 
         
         //Cast some rays to see if you're pointing at any creatures
@@ -52,9 +64,13 @@ public class MainCharacterScript : MonoBehaviour {
                 {
                     smallUiText.text = SMALL_UI_TEXT + hitObject.name;
                     faceUiSmallActive = true;
+                    if ((Input.GetKeyUp(KeyCode.X) || buttonThreeClicked()) && hitObject.GetComponent<Interactable>() != null)
+                    {
+                        hitObject.GetComponent<Interactable>().interact();
+                    }
 
                 }
-                else if (hit.distance < 3.0f && hitObject.tag.Equals("readable"))
+                else if (hit.distance < 1.5f && hitObject.tag.Equals("readable"))
                 {
                     if(currentReadable == null || !currentReadable.Equals(hitObject))
                     {
@@ -77,4 +93,34 @@ public class MainCharacterScript : MonoBehaviour {
         faceUiLarge.SetActive(faceUiLargeActive);
         
 	}
+
+    private void UpdateGamepadButtons()
+    {
+        buttonOneWasDown = buttonOneDown;
+        buttonTwoWasDown = buttonTwoDown;
+        buttonThreeWasDown = buttonThreeDown;
+        buttonFourWasDown = buttonFourDown;
+
+        buttonOneDown = OVRInput.Get(OVRInput.Button.One);
+        buttonTwoDown = OVRInput.Get(OVRInput.Button.Two);
+        buttonThreeDown = OVRInput.Get(OVRInput.Button.Three);
+        buttonFourDown = OVRInput.Get(OVRInput.Button.Four);
+    }
+
+    private bool buttonOneClicked() //A button
+    {
+        return buttonOneDown && !buttonOneWasDown;
+    }
+    private bool buttonTwoClicked() //B
+    {
+        return buttonTwoDown && !buttonTwoWasDown;
+    }
+    private bool buttonThreeClicked()//X
+    {
+        return buttonThreeDown && !buttonThreeWasDown;
+    }
+    private bool buttonFourClicked()//Y
+    {
+        return buttonFourDown && !buttonFourWasDown;
+    }
 }
