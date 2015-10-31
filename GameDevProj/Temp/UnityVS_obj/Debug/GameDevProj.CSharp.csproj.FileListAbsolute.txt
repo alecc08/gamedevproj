@@ -1,0 +1,17 @@
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\Mono.Cecil.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\Mono.Cecil.xml
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_obj\Debug\GameDevProj.CSharp.csprojResolveAssemblyReference.cache
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+D:\School\GameDevProject\gamedevproj\GameDevProj\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb

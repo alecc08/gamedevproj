@@ -18,7 +18,7 @@ Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Ma
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.092 seconds
+- Completed reload, in  0.063 seconds
 desktop: 1920x1080 60Hz; virtual: 3600x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -26,10 +26,18 @@ desktop: 1920x1080 60Hz; virtual: 3600x1080 at 0,0
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\System.dll (this message is harmless)
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\UnityScript.Lang.dll (this message is harmless)
 Platform assembly: D:\School\GameDevProject\gamedevproj\GameDevProj\HeadlightHorror_Data\Managed\Boo.Lang.dll (this message is harmless)
-10/30/15 01:02:22: [CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_7.dll
+10/30/15 21:32:45: [CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_7.dll
 
  
 (Filename:  Line: 46)
+
+Compositor failed to initialize.
+ 
+(Filename:  Line: 48)
+
+Bad config or LibOVR not found. VR disabled.
+ 
+(Filename:  Line: 248)
 
 Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
  
@@ -39,166 +47,21 @@ Creating volume controller...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2cc4 -> priority: 1 
-  Thread -> id: ae8 -> priority: 1 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 9.771712 ms
+[VRDevice] Successfully created device oculus.
+10/30/15 21:32:45: [CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_7.dll
 
-Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 257.
-Total: 0.362860 ms (FindLiveObjects: 0.017292 ms CreateObjectMapping: 0.023812 ms MarkObjects: 0.181713 ms  DeleteObjects: 0.139474 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.048159 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+(Filename:  Line: 46)
 
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.492696 ms (FindLiveObjects: 0.046491 ms CreateObjectMapping: 0.034585 ms MarkObjects: 0.282350 ms  DeleteObjects: 0.128985 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.636556 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.424659 ms (FindLiveObjects: 0.042522 ms CreateObjectMapping: 0.036569 ms MarkObjects: 0.244080 ms  DeleteObjects: 0.100920 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.578442 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.443086 ms (FindLiveObjects: 0.044223 ms CreateObjectMapping: 0.035435 ms MarkObjects: 0.261372 ms  DeleteObjects: 0.101487 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.558314 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.435715 ms (FindLiveObjects: 0.043940 ms CreateObjectMapping: 0.041672 ms MarkObjects: 0.242662 ms  DeleteObjects: 0.106590 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.648462 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.506870 ms (FindLiveObjects: 0.043089 ms CreateObjectMapping: 0.042239 ms MarkObjects: 0.315801 ms  DeleteObjects: 0.105172 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.786519 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.468033 ms (FindLiveObjects: 0.048759 ms CreateObjectMapping: 0.038553 ms MarkObjects: 0.259955 ms  DeleteObjects: 0.120197 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.619830 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.453858 ms (FindLiveObjects: 0.042239 ms CreateObjectMapping: 0.034585 ms MarkObjects: 0.264491 ms  DeleteObjects: 0.111692 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.705159 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.448472 ms (FindLiveObjects: 0.043373 ms CreateObjectMapping: 0.035152 ms MarkObjects: 0.262223 ms  DeleteObjects: 0.106873 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.772345 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.463780 ms (FindLiveObjects: 0.043940 ms CreateObjectMapping: 0.035152 ms MarkObjects: 0.256553 ms  DeleteObjects: 0.127284 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.512957 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.454425 ms (FindLiveObjects: 0.042522 ms CreateObjectMapping: 0.035719 ms MarkObjects: 0.264774 ms  DeleteObjects: 0.110842 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.602538 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.468599 ms (FindLiveObjects: 0.042806 ms CreateObjectMapping: 0.034018 ms MarkObjects: 0.282634 ms  DeleteObjects: 0.108291 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.855122 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.460945 ms (FindLiveObjects: 0.043089 ms CreateObjectMapping: 0.035152 ms MarkObjects: 0.273562 ms  DeleteObjects: 0.108574 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.596301 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.454709 ms (FindLiveObjects: 0.041955 ms CreateObjectMapping: 0.035435 ms MarkObjects: 0.268743 ms  DeleteObjects: 0.107724 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.754485 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.487876 ms (FindLiveObjects: 0.044507 ms CreateObjectMapping: 0.034868 ms MarkObjects: 0.300493 ms  DeleteObjects: 0.107157 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.743430 ms
-Unity v5.2.1f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.2.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 796.
-Total: 0.510839 ms (FindLiveObjects: 0.042806 ms CreateObjectMapping: 0.034868 ms MarkObjects: 0.281783 ms  DeleteObjects: 0.150530 ms)
-
-10/30/15 01:03:53: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x747: C2S=33.4671 (26.0806-664.771), S2C=14.093 (6.52014-70.5877), RTT=197.298 (125.017-10875.3), Runtime=149.738 (85.0454-10827.7), IPC=47.5601 (33.4512-701.908) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+Compositor failed to initialize.
  
 (Filename:  Line: 48)
 
+Bad config or LibOVR not found. VR disabled.
+ 
+(Filename:  Line: 248)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 188c -> priority: 1 
+  Thread -> id: 15c8 -> priority: 1 
+UnloadTime: 5.161686 ms
