@@ -10,7 +10,7 @@ public class MainMenuScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if(Input.anyKey)
+	    if(OVRInput.Get(OVRInput.Button.Start) || Input.GetKeyUp(KeyCode.Return))
         {
             PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, GameConstants.LEVEL_1);
             Application.LoadLevel(GameConstants.LOADING);

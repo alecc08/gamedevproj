@@ -252,9 +252,8 @@ public class OVRInput
 	/// </summary>
 	public void Update()
 	{
-		if (!OVRManager.isHmdPresent)
-			return;
-
+        if (!OVRManager.isHmdPresent)
+            return;
 		connectedControllerTypes = Controller.None;
 
 		for (int i = 0; i < controllers.Count; i++)
