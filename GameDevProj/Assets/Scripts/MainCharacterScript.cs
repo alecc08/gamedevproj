@@ -5,7 +5,7 @@ using Assets.Scripts;
 
 public class MainCharacterScript : MonoBehaviour {
 
-    Light spotLight;
+    Flashlight spotLight;
     GameObject faceUiLarge; //Used for notes or hints
     GameObject faceUiSmall; //Used for "Press E to interact" text
 
@@ -30,7 +30,7 @@ public class MainCharacterScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        spotLight = GetComponentInChildren<Light>();
+        spotLight = GetComponentInChildren<Flashlight>();
         faceUiLarge = GameObject.Find("FaceUILarge");
         largeUiText = faceUiLarge.GetComponentInChildren<Text>();
         faceUiLarge.SetActive(false);
@@ -48,7 +48,7 @@ public class MainCharacterScript : MonoBehaviour {
         faceUiLargeActive = false;
         if (Input.GetKeyUp(KeyCode.F) || buttonFourClicked())
         {
-            spotLight.enabled = !spotLight.enabled;
+            spotLight.toggleLight();
         }
         
 

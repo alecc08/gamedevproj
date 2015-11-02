@@ -10,6 +10,7 @@ public class Torch : MonoBehaviour, Interactable {
 	void Start () {
         torchlight = GetComponentInChildren<Light>();
         flame = GetComponentInChildren<ParticleSystem>();
+        flame.playbackSpeed = 2;
 	}
 	
 	// Update is called once per frame
@@ -20,14 +21,16 @@ public class Torch : MonoBehaviour, Interactable {
     public void interact()
     {
         Debug.Log("Torch is being interacted with");
-        torchlight.enabled = !torchlight.enabled;
         if(flame.isPlaying)
         {
+            torchlight.enabled = false;
             flame.Stop();
         }
         else
         {
+            torchlight.enabled = true;
             flame.Play();
+            
         }
         
     }
