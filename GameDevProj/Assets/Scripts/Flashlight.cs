@@ -18,6 +18,7 @@ public class Flashlight : MonoBehaviour {
 
     float minFlickerDelay = 2.0f;
     float timeSinceFlicker = 0.0f;
+    
 
     Light flashLight;
 
@@ -51,6 +52,7 @@ public class Flashlight : MonoBehaviour {
         }
         else
         {
+            lightEnabled = false;
             flashLight.enabled = false;
         }
     }

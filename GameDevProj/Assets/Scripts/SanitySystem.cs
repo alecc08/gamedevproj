@@ -3,16 +3,20 @@ using System.Collections;
 
 public class SanitySystem {
 
+    static MotionBlur motionBlur;
+
     private static int currentInsanityLevel = 0;
 
     private const int MAX_INSANITY = 1000;
 
 	public static void init()
     {
+        motionBlur = GameObject.Find("CenterEyeAnchor").GetComponentInChildren<MotionBlur>();
         currentInsanityLevel = 0;
     }
 
-    public static float getInsanityLevelPercent()
+
+    public static float getInsanityLevel()
     {
         return currentInsanityLevel / MAX_INSANITY;
     }
@@ -24,6 +28,7 @@ public class SanitySystem {
         {
             currentInsanityLevel = MAX_INSANITY;
         }
+        UpdateEffects();
     }
 
     public static void decreaseInsanity(int amount)
@@ -32,6 +37,19 @@ public class SanitySystem {
         if(currentInsanityLevel < 0)
         {
             currentInsanityLevel = 0;
+        }
+        UpdateEffects();
+    }
+
+    private static void UpdateEffects()
+    {
+        if(getInsanityLevel() > 0.6f)
+        {
+            motionBlur.blurAmount = getInsanityLevel();
+        }
+        else
+        {
+            motionBlur.blurAmount = 0.0f;
         }
     }
 }

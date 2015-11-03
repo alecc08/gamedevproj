@@ -14,6 +14,8 @@ public class MainCharacterScript : MonoBehaviour {
 
     GameObject currentReadable = null;
 
+    GameObject[] ghouls;
+
     bool buttonOneDown = false;
     bool buttonOneWasDown = false;
     bool buttonTwoDown = false;
@@ -38,7 +40,15 @@ public class MainCharacterScript : MonoBehaviour {
         faceUiSmall = GameObject.Find("FaceUISmall");
         smallUiText = faceUiSmall.GetComponentInChildren<Text>();
         faceUiSmall.SetActive(false);
-	}
+
+        SanitySystem.init();
+
+        ghouls = GameObject.FindGameObjectsWithTag("ghoul");
+        foreach (GameObject ghoul in ghouls)
+        {
+            ghoul.SetActive(false);
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -49,10 +59,23 @@ public class MainCharacterScript : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.F) || buttonFourClicked())
         {
             spotLight.toggleLight();
+            if(spotLight.lightEnabled)
+            {
+                deactivateGhouls();
+                
+            }
+            else
+            {
+                activateGhouls();
+            }
         }
-        
+        if (Input.GetKeyUp(KeyCode.Plus) || Input.GetKeyUp(KeyCode.KeypadPlus))
+        {
+            SanitySystem.increaseInsanity(10);
+        }
 
-        
+
+
         //Cast some rays to see if you're pointing at any creatures
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 10f))
@@ -80,7 +103,7 @@ public class MainCharacterScript : MonoBehaviour {
                     faceUiLargeActive = true;
 
                 }
-                else if(hitObject.name.StartsWith("ghoul") && spotLight.enabled)
+                else if(hitObject.name.StartsWith("ghoul") && spotLight.lightEnabled)
                 {
                     GhoulAI ghoul = hitObject.GetComponent<GhoulAI>();
                     ghoul.disappear();
@@ -122,5 +145,21 @@ public class MainCharacterScript : MonoBehaviour {
     private bool buttonFourClicked()//Y
     {
         return buttonFourDown && !buttonFourWasDown;
+    }
+
+    public void activateGhouls()
+    {
+        foreach (GameObject ghoul in ghouls)
+        {
+            ghoul.SetActive(true);
+        }
+    }
+
+    public void deactivateGhouls()
+    {
+        foreach (GameObject ghoul in ghouls)
+        {
+            ghoul.SetActive(false);
+        }
     }
 }

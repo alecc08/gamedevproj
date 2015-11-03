@@ -6,6 +6,6 @@ public class SampleReadable : MonoBehaviour, Readable  {
 
 	public string GetText()
     {
-        return "Sample text\nMake sure you\nadd new lines\nwhere necessary";
+        return "Do not stray from\nthe light for\ntoo long or suffer the\nconsequences...";
     }
 }
