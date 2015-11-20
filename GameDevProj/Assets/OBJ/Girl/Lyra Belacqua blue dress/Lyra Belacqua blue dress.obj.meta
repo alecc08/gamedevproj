@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 9ff31f86cdce6f24b9c31ecc5c031369
+timeCreated: 1446350237
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Lyra_whit_dress.001_Lyra_whit_dress.001_Tex_0444_0_dds_Tex_0444_0.dds
+    100004: Lyra_whit_dress_Lyra_whit_dress_Tex_0440_0_dds_Tex_0440_0.dds
+    100006: Lyra_whit_dress_Lyra_whit_dress_Tex_0443_0_dds_Tex_0443_0.dds
+    100008: Lyra_whit_dress_Lyra_whit_dress_Tex_0444_0_dds_Tex_0444_0.dds
+    100010: Lyra_whit_dress_Lyra_whit_dress_Tex_0456_0_dds_Tex_0456_0.dds
+    100012: Lyra_whit_dress_Lyra_whit_dress_Tex_0457_0_dds_Tex_0457_0.dds
+    100014: Lyra_whit_dress_Lyra_whit_dress_Tex_0458_0_dds_Tex_0458_0.dds
+    100016: Lyra_whit_dress_Lyra_whit_dress_Tex_0459_0_dds_Tex_0459_0.dds
+    400000: //RootNode
+    400002: Lyra_whit_dress.001_Lyra_whit_dress.001_Tex_0444_0_dds_Tex_0444_0.dds
+    400004: Lyra_whit_dress_Lyra_whit_dress_Tex_0440_0_dds_Tex_0440_0.dds
+    400006: Lyra_whit_dress_Lyra_whit_dress_Tex_0443_0_dds_Tex_0443_0.dds
+    400008: Lyra_whit_dress_Lyra_whit_dress_Tex_0444_0_dds_Tex_0444_0.dds
+    400010: Lyra_whit_dress_Lyra_whit_dress_Tex_0456_0_dds_Tex_0456_0.dds
+    400012: Lyra_whit_dress_Lyra_whit_dress_Tex_0457_0_dds_Tex_0457_0.dds
+    400014: Lyra_whit_dress_Lyra_whit_dress_Tex_0458_0_dds_Tex_0458_0.dds
+    400016: Lyra_whit_dress_Lyra_whit_dress_Tex_0459_0_dds_Tex_0459_0.dds
+    2300000: Lyra_whit_dress.001_Lyra_whit_dress.001_Tex_0444_0_dds_Tex_0444_0.dds
+    2300002: Lyra_whit_dress_Lyra_whit_dress_Tex_0440_0_dds_Tex_0440_0.dds
+    2300004: Lyra_whit_dress_Lyra_whit_dress_Tex_0443_0_dds_Tex_0443_0.dds
+    2300006: Lyra_whit_dress_Lyra_whit_dress_Tex_0444_0_dds_Tex_0444_0.dds
+    2300008: Lyra_whit_dress_Lyra_whit_dress_Tex_0456_0_dds_Tex_0456_0.dds
+    2300010: Lyra_whit_dress_Lyra_whit_dress_Tex_0457_0_dds_Tex_0457_0.dds
+    2300012: Lyra_whit_dress_Lyra_whit_dress_Tex_0458_0_dds_Tex_0458_0.dds
+    2300014: Lyra_whit_dress_Lyra_whit_dress_Tex_0459_0_dds_Tex_0459_0.dds
+    3300000: Lyra_whit_dress.001_Lyra_whit_dress.001_Tex_0444_0_dds_Tex_0444_0.dds
+    3300002: Lyra_whit_dress_Lyra_whit_dress_Tex_0440_0_dds_Tex_0440_0.dds
+    3300004: Lyra_whit_dress_Lyra_whit_dress_Tex_0443_0_dds_Tex_0443_0.dds
+    3300006: Lyra_whit_dress_Lyra_whit_dress_Tex_0444_0_dds_Tex_0444_0.dds
+    3300008: Lyra_whit_dress_Lyra_whit_dress_Tex_0456_0_dds_Tex_0456_0.dds
+    3300010: Lyra_whit_dress_Lyra_whit_dress_Tex_0457_0_dds_Tex_0457_0.dds
+    3300012: Lyra_whit_dress_Lyra_whit_dress_Tex_0458_0_dds_Tex_0458_0.dds
+    3300014: Lyra_whit_dress_Lyra_whit_dress_Tex_0459_0_dds_Tex_0459_0.dds
+    4300000: Lyra_whit_dress.001_Lyra_whit_dress.001_Tex_0444_0_dds_Tex_0444_0.dds
+    4300002: Lyra_whit_dress_Lyra_whit_dress_Tex_0440_0_dds_Tex_0440_0.dds
+    4300004: Lyra_whit_dress_Lyra_whit_dress_Tex_0443_0_dds_Tex_0443_0.dds
+    4300006: Lyra_whit_dress_Lyra_whit_dress_Tex_0444_0_dds_Tex_0444_0.dds
+    4300008: Lyra_whit_dress_Lyra_whit_dress_Tex_0456_0_dds_Tex_0456_0.dds
+    4300010: Lyra_whit_dress_Lyra_whit_dress_Tex_0457_0_dds_Tex_0457_0.dds
+    4300012: Lyra_whit_dress_Lyra_whit_dress_Tex_0458_0_dds_Tex_0458_0.dds
+    4300014: Lyra_whit_dress_Lyra_whit_dress_Tex_0459_0_dds_Tex_0459_0.dds
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
