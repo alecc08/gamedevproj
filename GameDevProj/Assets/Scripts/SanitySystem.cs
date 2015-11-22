@@ -11,8 +11,11 @@ public class SanitySystem {
 
     private const int MAX_INSANITY = 1000;
 
-	public static void init()
+    private static MainCharacterScript mainCharScript;
+
+    public static void init(MainCharacterScript mainCharacter)
     {
+        mainCharScript = mainCharacter;
         motionBlur = GameObject.Find("CenterEyeAnchor").GetComponentInChildren<UnityStandardAssets.ImageEffects.MotionBlur>();
         currentInsanityLevel = 0;
     }
@@ -20,7 +23,7 @@ public class SanitySystem {
 
     public static float getInsanityLevel()
     {
-        return currentInsanityLevel / MAX_INSANITY;
+        return (float)currentInsanityLevel / MAX_INSANITY;
     }
 
     public static void increaseInsanity(int amount)
@@ -45,13 +48,14 @@ public class SanitySystem {
 
     private static void UpdateEffects()
     {
-        if(getInsanityLevel() > 0.6f)
+        motionBlur.blurAmount = getInsanityLevel();
+        if (getInsanityLevel() > 0.9f)
         {
-            motionBlur.blurAmount = getInsanityLevel();
+            mainCharScript.activateGhouls();
         }
         else
         {
-            motionBlur.blurAmount = 0.0f;
+            mainCharScript.deactivateGhouls();
         }
     }
 }

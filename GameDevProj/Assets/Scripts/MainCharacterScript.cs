@@ -48,7 +48,7 @@ public class MainCharacterScript : MonoBehaviour {
         smallUiText = faceUiSmall.GetComponentInChildren<Text>();
         faceUiSmall.SetActive(false);
 
-        SanitySystem.init();
+        SanitySystem.init(this);
 
         ghouls = GameObject.FindGameObjectsWithTag("ghoul");
         foreach (GameObject ghoul in ghouls)
