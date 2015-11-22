@@ -16,9 +16,10 @@ public class Barrel : MonoBehaviour, Interactable {
 	
 	}
 
-    public void interact()
+    public void interact(GameObject player)
     {
         Debug.Log("Applying force to barrel!");
-        barrelBody.AddForce(new Vector3(0, 200f, 0));
+        Vector3 force = this.transform.position - player.transform.position;
+        barrelBody.AddForce(force.normalized * 200);
     }
 }

@@ -94,12 +94,15 @@ public class OVRPlayerController : MonoBehaviour
 	private bool prevHatRight = false;
 	private float SimulationRate = 60f;
 
-	void Start()
+    private AudioSource walkingAudio;
+
+    void Start()
 	{
 		// Add eye-depth as a camera offset from the player controller
 		var p = CameraRig.transform.localPosition;
 		p.z = OVRManager.profile.eyeDepth;
 		CameraRig.transform.localPosition = p;
+        walkingAudio = GetComponent<AudioSource>();
 	}
 
 	void Awake()
@@ -221,6 +224,18 @@ public class OVRPlayerController : MonoBehaviour
 		bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
 		bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
+        if(moveForward || moveBack || moveRight || moveLeft)
+        {
+            if(!walkingAudio.isPlaying)
+            {
+                walkingAudio.Play();
+            }
+        }
+        else if(walkingAudio.isPlaying)
+        {
+            walkingAudio.Stop();
+        }
+
 		bool dpad_move = false;
 
 #if UNITY_ANDROID
@@ -260,7 +275,15 @@ public class OVRPlayerController : MonoBehaviour
 
 		// Run!
 		if (dpad_move || Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-			moveInfluence *= 2.0f;
+        {
+            moveInfluence *= 2.0f;
+            walkingAudio.pitch = 2.0f;
+        }
+        else
+        {
+            walkingAudio.pitch = 1.0f;
+        }
+			
 
 		Quaternion ort = transform.rotation;
 		Vector3 ortEuler = ort.eulerAngles;

@@ -18,7 +18,7 @@ public class Torch : MonoBehaviour, Interactable {
 	
 	}
 
-    public void interact()
+    public void interact(GameObject player)
     {
         Debug.Log("Torch is being interacted with");
         if(flame.isPlaying)

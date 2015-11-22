@@ -12,6 +12,8 @@ public class MainCharacterScript : MonoBehaviour {
     Text smallUiText;
     Text largeUiText;
 
+    
+
     GameObject currentReadable = null;
 
     GameObject[] ghouls;
@@ -89,7 +91,7 @@ public class MainCharacterScript : MonoBehaviour {
                     faceUiSmallActive = true;
                     if ((Input.GetKeyUp(KeyCode.X) || buttonThreeClicked()) && hitObject.GetComponent<Interactable>() != null)
                     {
-                        hitObject.GetComponent<Interactable>().interact();
+                        hitObject.GetComponent<Interactable>().interact(this.gameObject);
                     }
 
                 }
