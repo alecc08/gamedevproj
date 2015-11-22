@@ -18,6 +18,9 @@ public class MainCharacterScript : MonoBehaviour {
 
     GameObject[] ghouls;
 
+    GameObject[] allLights = new GameObject[100];
+    int sceneLightCount = 0;
+
     bool buttonOneDown = false;
     bool buttonOneWasDown = false;
     bool buttonTwoDown = false;
@@ -50,6 +53,18 @@ public class MainCharacterScript : MonoBehaviour {
         {
             ghoul.SetActive(false);
         }
+
+        GameObject[] allItems = GameObject.FindGameObjectsWithTag("item");
+
+        foreach(GameObject go in allItems)
+        {
+            if(go.name.Equals("Torch"))
+            {
+                allLights[sceneLightCount++] = go;
+            }
+        }
+        Debug.Log("Found a total of " + sceneLightCount + " lights in the scene.");
+
     }
 	
 	// Update is called once per frame
@@ -71,9 +86,31 @@ public class MainCharacterScript : MonoBehaviour {
                 activateGhouls();
             }
         }
-        if (Input.GetKeyUp(KeyCode.Plus) || Input.GetKeyUp(KeyCode.KeypadPlus))
+        if (!spotLight.lightEnabled)
         {
-            SanitySystem.increaseInsanity(10);
+            bool nearLight = false;
+            //Check if in light or in the dark to increase sanity
+            foreach(GameObject light in allLights)
+            {
+                if(light == null)
+                {
+                    break;
+                }
+                if((light.transform.position - transform.position).magnitude < light.GetComponentInChildren<Light>().range)
+                {
+                    nearLight = true;
+                }
+            }
+            if(!nearLight)
+            {
+                Debug.Log("Not near light!");
+                SanitySystem.increaseInsanity(10);
+            }
+            else
+            {
+                Debug.Log("Near light!!!");
+            }
+            
         }
 
 
