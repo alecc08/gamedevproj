@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
+using UnityStandardAssets.ImageEffects;
 
 public class SanitySystem {
 
-    static MotionBlur motionBlur;
+    private static UnityStandardAssets.ImageEffects.MotionBlur motionBlur;
 
     private static int currentInsanityLevel = 0;
 
@@ -11,7 +13,7 @@ public class SanitySystem {
 
 	public static void init()
     {
-        motionBlur = GameObject.Find("CenterEyeAnchor").GetComponentInChildren<MotionBlur>();
+        motionBlur = GameObject.Find("CenterEyeAnchor").GetComponentInChildren<UnityStandardAssets.ImageEffects.MotionBlur>();
         currentInsanityLevel = 0;
     }
 

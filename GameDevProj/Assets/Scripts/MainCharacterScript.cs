@@ -18,7 +18,7 @@ public class MainCharacterScript : MonoBehaviour {
 
     GameObject[] ghouls;
 
-    GameObject[] allLights = new GameObject[100];
+    Light[] allLights;
     int sceneLightCount = 0;
 
     bool buttonOneDown = false;
@@ -37,6 +37,8 @@ public class MainCharacterScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        sceneLightCount = 0;
+        allLights = new Light[50];
         spotLight = GetComponentInChildren<Flashlight>();
         faceUiLarge = GameObject.Find("FaceUILarge");
         largeUiText = faceUiLarge.GetComponentInChildren<Text>();
@@ -60,7 +62,7 @@ public class MainCharacterScript : MonoBehaviour {
         {
             if(go.name.Equals("Torch"))
             {
-                allLights[sceneLightCount++] = go;
+                allLights[sceneLightCount++] = go.GetComponentInChildren<Light>();
             }
         }
         Debug.Log("Found a total of " + sceneLightCount + " lights in the scene.");
@@ -90,13 +92,13 @@ public class MainCharacterScript : MonoBehaviour {
         {
             bool nearLight = false;
             //Check if in light or in the dark to increase sanity
-            foreach(GameObject light in allLights)
+            foreach(Light light in allLights)
             {
                 if(light == null)
                 {
                     break;
                 }
-                if((light.transform.position - transform.position).magnitude < light.GetComponentInChildren<Light>().range)
+                if(light.enabled && (light.transform.position - transform.position).magnitude < light.GetComponentInChildren<Light>().range)
                 {
                     nearLight = true;
                 }
@@ -104,13 +106,20 @@ public class MainCharacterScript : MonoBehaviour {
             if(!nearLight)
             {
                 Debug.Log("Not near light!");
-                SanitySystem.increaseInsanity(10);
+                SanitySystem.increaseInsanity(1);
             }
             else
             {
                 Debug.Log("Near light!!!");
+                //In light, decrease insanity
+                SanitySystem.decreaseInsanity(1);
             }
             
+        }
+        else
+        {
+            //In light, decrease insanity
+            SanitySystem.decreaseInsanity(1);
         }
 
 
