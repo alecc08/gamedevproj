@@ -53,4 +53,12 @@ public class GhoulAI : MonoBehaviour {
         }
         
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name.Equals("mainCharacter"))
+        {
+            Debug.Log("You dead biiitch...");
+        }
+    }
 }

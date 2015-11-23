@@ -35,6 +35,8 @@ public class MainCharacterScript : MonoBehaviour {
     bool faceUiSmallActive = false;
     bool faceUiLargeActive = false;
 
+    bool ghoulsActive = false;
+
 	// Use this for initialization
 	void Start () {
         sceneLightCount = 0;
@@ -197,17 +199,27 @@ public class MainCharacterScript : MonoBehaviour {
 
     public void activateGhouls()
     {
-        foreach (GameObject ghoul in ghouls)
+        if(!ghoulsActive)
         {
-            ghoul.SetActive(true);
+            ghoulsActive = true;
+            foreach (GameObject ghoul in ghouls)
+            {
+                ghoul.SetActive(true);
+            }
         }
+        
     }
 
     public void deactivateGhouls()
     {
-        foreach (GameObject ghoul in ghouls)
+        if(ghoulsActive)
         {
-            ghoul.SetActive(false);
+            ghoulsActive = false;
+            foreach (GameObject ghoul in ghouls)
+            {
+                ghoul.SetActive(false);
+            }
         }
+        
     }
 }
