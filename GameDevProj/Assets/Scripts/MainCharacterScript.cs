@@ -80,15 +80,7 @@ public class MainCharacterScript : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.F) || buttonFourClicked())
         {
             spotLight.toggleLight();
-            if(spotLight.lightEnabled)
-            {
-                deactivateGhouls();
-                
-            }
-            else
-            {
-                activateGhouls();
-            }
+            
         }
         if (!spotLight.lightEnabled)
         {
@@ -107,12 +99,10 @@ public class MainCharacterScript : MonoBehaviour {
             }
             if(!nearLight)
             {
-                Debug.Log("Not near light!");
-                SanitySystem.increaseInsanity(1);
+                SanitySystem.increaseInsanity(4);
             }
             else
             {
-                Debug.Log("Near light!!!");
                 //In light, decrease insanity
                 SanitySystem.decreaseInsanity(1);
             }
@@ -133,17 +123,20 @@ public class MainCharacterScript : MonoBehaviour {
             if(hit.collider.gameObject != null)
             {
                 GameObject hitObject = hit.collider.gameObject;
-                if(hit.distance < 2.0f && hitObject.tag.Equals("item"))
+                if(hit.distance < 2.0f && hitObject.tag.Equals("item") && hitObject.GetComponent<Interactable>() != null)
                 {
-                    smallUiText.text = SMALL_UI_TEXT + hitObject.name;
-                    faceUiSmallActive = true;
-                    if ((Input.GetKeyUp(KeyCode.X) || buttonThreeClicked()) && hitObject.GetComponent<Interactable>() != null)
+                    Interactable interactable = hitObject.GetComponent<Interactable>();
+                    if(interactable.isInteractable())
                     {
-                        hitObject.GetComponent<Interactable>().interact(this.gameObject);
+                        smallUiText.text = SMALL_UI_TEXT + interactable.getLabel();
+                        faceUiSmallActive = true;
+                        if ((Input.GetKeyUp(KeyCode.X) || buttonThreeClicked()))
+                        {
+                            interactable.interact(this.gameObject);
+                        }
                     }
-
                 }
-                else if (hit.distance < 1.5f && hitObject.tag.Equals("readable"))
+                else if (hit.distance < 2.0f && hitObject.tag.Equals("readable"))
                 {
                     if(currentReadable == null || !currentReadable.Equals(hitObject))
                     {
@@ -152,11 +145,6 @@ public class MainCharacterScript : MonoBehaviour {
                     }
                     faceUiLargeActive = true;
 
-                }
-                else if(hitObject.name.StartsWith("ghoul") && spotLight.lightEnabled)
-                {
-                    GhoulAI ghoul = hitObject.GetComponent<GhoulAI>();
-                    ghoul.disappear();
                 }
 
             }
@@ -217,9 +205,17 @@ public class MainCharacterScript : MonoBehaviour {
             ghoulsActive = false;
             foreach (GameObject ghoul in ghouls)
             {
-                ghoul.SetActive(false);
+                if(ghoul != null)
+                {
+                    ghoul.SetActive(false);
+                }
             }
         }
         
+    }
+
+    public void rechargeBattery()
+    {
+        spotLight.replenishBattery();
     }
 }
