@@ -104,14 +104,14 @@ public class MainCharacterScript : MonoBehaviour {
             else
             {
                 //In light, decrease insanity
-                SanitySystem.decreaseInsanity(1);
+                SanitySystem.decreaseInsanity(2);
             }
             
         }
         else
         {
             //In light, decrease insanity
-            SanitySystem.decreaseInsanity(1);
+            SanitySystem.decreaseInsanity(2);
         }
 
 

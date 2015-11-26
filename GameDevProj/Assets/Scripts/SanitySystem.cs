@@ -9,7 +9,7 @@ public class SanitySystem {
 
     private static int currentInsanityLevel = 0;
 
-    private const int MAX_INSANITY = 10000;
+    private const int MAX_INSANITY = 2000;
 
     private static MainCharacterScript mainCharScript;
 
@@ -49,7 +49,15 @@ public class SanitySystem {
 
     private static void UpdateEffects()
     {
-        motionBlur.blurAmount = getInsanityLevel();
+        if(getInsanityLevel() > 0.6f)
+        {
+            motionBlur.blurAmount = getInsanityLevel() - 0.4f;
+        }
+        else
+        {
+            motionBlur.blurAmount = 0.0f;
+        }
+        
         if (getInsanityLevel() > 0.8f)
         {
             mainCharScript.activateGhouls();
