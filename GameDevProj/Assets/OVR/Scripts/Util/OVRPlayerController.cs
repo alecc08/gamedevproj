@@ -223,18 +223,7 @@ public class OVRPlayerController : MonoBehaviour
 		bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
 		bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
 		bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
-
-        if(moveForward || moveBack || moveRight || moveLeft)
-        {
-            if(!walkingAudio.isPlaying)
-            {
-                walkingAudio.Play();
-            }
-        }
-        else if(walkingAudio.isPlaying)
-        {
-            walkingAudio.Stop();
-        }
+        
 
 		bool dpad_move = false;
 
@@ -277,9 +266,13 @@ public class OVRPlayerController : MonoBehaviour
 		if (dpad_move || Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
             moveInfluence *= 2.0f;
-            walkingAudio.pitch = 2.0f;
+            if (walkingAudio != null)
+            {
+                walkingAudio.pitch = 2.0f;
+            }
+            
         }
-        else
+        else if(walkingAudio != null)
         {
             walkingAudio.pitch = 1.0f;
         }
@@ -299,7 +292,21 @@ public class OVRPlayerController : MonoBehaviour
 		if (moveRight)
 			MoveThrottle += ort * (transform.lossyScale.x * moveInfluence * BackAndSideDampen * Vector3.right);
 
-		Vector3 euler = transform.rotation.eulerAngles;
+        if (walkingAudio != null)
+        {
+            if (moveForward || moveBack || moveRight || moveLeft)
+            {
+                if (!walkingAudio.isPlaying)
+                {
+                    walkingAudio.Play();
+                }
+            }
+            else if (walkingAudio.isPlaying)
+            {
+                walkingAudio.Stop();
+            }
+        }
+        Vector3 euler = transform.rotation.eulerAngles;
 
 #if UNITY_ANDROID
 		bool curHatLeft = OVRGamepadController.GPC_GetButton(OVRGamepadController.Button.LeftShoulder);

@@ -49,6 +49,7 @@ public class SanitySystem {
 
     private static void UpdateEffects()
     {
+        mainCharScript.setHeartRate(1.0f + getInsanityLevel());
         if(getInsanityLevel() > 0.6f)
         {
             motionBlur.blurAmount = getInsanityLevel() - 0.4f;
@@ -66,5 +67,10 @@ public class SanitySystem {
         {
             mainCharScript.deactivateGhouls();
         }
+    }
+
+    public static void Reset()
+    {
+        currentInsanityLevel = 0;
     }
 }

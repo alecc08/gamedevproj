@@ -12,7 +12,7 @@ public class MainCharacterScript : MonoBehaviour {
     Text smallUiText;
     Text largeUiText;
 
-    
+    AudioSource heartBeat;
 
     GameObject currentReadable = null;
 
@@ -50,6 +50,8 @@ public class MainCharacterScript : MonoBehaviour {
         smallUiText = faceUiSmall.GetComponentInChildren<Text>();
         faceUiSmall.SetActive(false);
 
+        heartBeat = GameObject.Find("Heartbeat").GetComponent<AudioSource>();
+
         SanitySystem.init(this);
 
         ghouls = GameObject.FindGameObjectsWithTag("ghoul");
@@ -68,6 +70,7 @@ public class MainCharacterScript : MonoBehaviour {
             }
         }
         Debug.Log("Found a total of " + sceneLightCount + " lights in the scene.");
+        spotLight.toggleLight();
 
     }
 	
@@ -80,7 +83,14 @@ public class MainCharacterScript : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.F) || buttonFourClicked())
         {
             spotLight.toggleLight();
-            
+            if(spotLight.lightEnabled)
+            {
+                deactivateGhouls();
+            }
+            else
+            {
+                activateGhouls();
+            }
         }
         if (!spotLight.lightEnabled)
         {
@@ -217,5 +227,22 @@ public class MainCharacterScript : MonoBehaviour {
     public void rechargeBattery()
     {
         spotLight.replenishBattery();
+    }
+
+    public Flashlight getSpotlight()
+    {
+        return spotLight;
+    }
+
+    public void setHeartRate(float rate)
+    {
+        heartBeat.pitch = rate;
+        heartBeat.volume = rate / 3;
+
+    }
+
+    public void die()
+    {
+
     }
 }
