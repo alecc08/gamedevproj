@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using System;
 
 public class Torch : MonoBehaviour, Interactable {
 
@@ -33,5 +34,22 @@ public class Torch : MonoBehaviour, Interactable {
             
         }
         
+    }
+
+    public bool isInteractable()
+    {
+        return true;
+    }
+
+    public string getLabel()
+    {
+        if(flame.isPlaying)
+        {
+            return "Extinguish";
+        }
+        else
+        {
+            return "Light";
+        }
     }
 }

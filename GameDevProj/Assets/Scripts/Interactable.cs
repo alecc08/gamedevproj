@@ -9,5 +9,7 @@ namespace Assets.Scripts
     interface Interactable
     {
         void interact(GameObject player);
+        bool isInteractable();
+        string getLabel();
     }
 }

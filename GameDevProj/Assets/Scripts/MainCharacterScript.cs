@@ -12,13 +12,13 @@ public class MainCharacterScript : MonoBehaviour {
     Text smallUiText;
     Text largeUiText;
 
-    
+    AudioSource heartBeat;
 
     GameObject currentReadable = null;
 
     GameObject[] ghouls;
 
-    GameObject[] allLights = new GameObject[100];
+    Light[] allLights;
     int sceneLightCount = 0;
 
     bool buttonOneDown = false;
@@ -35,8 +35,12 @@ public class MainCharacterScript : MonoBehaviour {
     bool faceUiSmallActive = false;
     bool faceUiLargeActive = false;
 
+    bool ghoulsActive = false;
+
 	// Use this for initialization
 	void Start () {
+        sceneLightCount = 0;
+        allLights = new Light[50];
         spotLight = GetComponentInChildren<Flashlight>();
         faceUiLarge = GameObject.Find("FaceUILarge");
         largeUiText = faceUiLarge.GetComponentInChildren<Text>();
@@ -46,7 +50,9 @@ public class MainCharacterScript : MonoBehaviour {
         smallUiText = faceUiSmall.GetComponentInChildren<Text>();
         faceUiSmall.SetActive(false);
 
-        SanitySystem.init();
+        heartBeat = GameObject.Find("Heartbeat").GetComponent<AudioSource>();
+
+        SanitySystem.init(this);
 
         ghouls = GameObject.FindGameObjectsWithTag("ghoul");
         foreach (GameObject ghoul in ghouls)
@@ -60,10 +66,11 @@ public class MainCharacterScript : MonoBehaviour {
         {
             if(go.name.Equals("Torch"))
             {
-                allLights[sceneLightCount++] = go;
+                allLights[sceneLightCount++] = go.GetComponentInChildren<Light>();
             }
         }
         Debug.Log("Found a total of " + sceneLightCount + " lights in the scene.");
+        spotLight.toggleLight();
 
     }
 	
@@ -79,7 +86,6 @@ public class MainCharacterScript : MonoBehaviour {
             if(spotLight.lightEnabled)
             {
                 deactivateGhouls();
-                
             }
             else
             {
@@ -90,27 +96,32 @@ public class MainCharacterScript : MonoBehaviour {
         {
             bool nearLight = false;
             //Check if in light or in the dark to increase sanity
-            foreach(GameObject light in allLights)
+            foreach(Light light in allLights)
             {
                 if(light == null)
                 {
                     break;
                 }
-                if((light.transform.position - transform.position).magnitude < light.GetComponentInChildren<Light>().range)
+                if(light.enabled && (light.transform.position - transform.position).magnitude < light.GetComponentInChildren<Light>().range)
                 {
                     nearLight = true;
                 }
             }
             if(!nearLight)
             {
-                Debug.Log("Not near light!");
-                SanitySystem.increaseInsanity(10);
+                SanitySystem.increaseInsanity(4);
             }
             else
             {
-                Debug.Log("Near light!!!");
+                //In light, decrease insanity
+                SanitySystem.decreaseInsanity(2);
             }
             
+        }
+        else
+        {
+            //In light, decrease insanity
+            SanitySystem.decreaseInsanity(2);
         }
 
 
@@ -122,17 +133,20 @@ public class MainCharacterScript : MonoBehaviour {
             if(hit.collider.gameObject != null)
             {
                 GameObject hitObject = hit.collider.gameObject;
-                if(hit.distance < 2.0f && hitObject.tag.Equals("item"))
+                if(hit.distance < 2.0f && hitObject.tag.Equals("item") && hitObject.GetComponent<Interactable>() != null)
                 {
-                    smallUiText.text = SMALL_UI_TEXT + hitObject.name;
-                    faceUiSmallActive = true;
-                    if ((Input.GetKeyUp(KeyCode.X) || buttonThreeClicked()) && hitObject.GetComponent<Interactable>() != null)
+                    Interactable interactable = hitObject.GetComponent<Interactable>();
+                    if(interactable.isInteractable())
                     {
-                        hitObject.GetComponent<Interactable>().interact(this.gameObject);
+                        smallUiText.text = SMALL_UI_TEXT + interactable.getLabel();
+                        faceUiSmallActive = true;
+                        if ((Input.GetKeyUp(KeyCode.X) || buttonThreeClicked()))
+                        {
+                            interactable.interact(this.gameObject);
+                        }
                     }
-
                 }
-                else if (hit.distance < 1.5f && hitObject.tag.Equals("readable"))
+                else if (hit.distance < 2.0f && hitObject.tag.Equals("readable"))
                 {
                     if(currentReadable == null || !currentReadable.Equals(hitObject))
                     {
@@ -141,11 +155,6 @@ public class MainCharacterScript : MonoBehaviour {
                     }
                     faceUiLargeActive = true;
 
-                }
-                else if(hitObject.name.StartsWith("ghoul") && spotLight.lightEnabled)
-                {
-                    GhoulAI ghoul = hitObject.GetComponent<GhoulAI>();
-                    ghoul.disappear();
                 }
 
             }
@@ -188,17 +197,52 @@ public class MainCharacterScript : MonoBehaviour {
 
     public void activateGhouls()
     {
-        foreach (GameObject ghoul in ghouls)
+        if(!ghoulsActive)
         {
-            ghoul.SetActive(true);
+            ghoulsActive = true;
+            foreach (GameObject ghoul in ghouls)
+            {
+                ghoul.SetActive(true);
+            }
         }
+        
     }
 
     public void deactivateGhouls()
     {
-        foreach (GameObject ghoul in ghouls)
+        if(ghoulsActive)
         {
-            ghoul.SetActive(false);
+            ghoulsActive = false;
+            foreach (GameObject ghoul in ghouls)
+            {
+                if(ghoul != null)
+                {
+                    ghoul.SetActive(false);
+                }
+            }
         }
+        
+    }
+
+    public void rechargeBattery()
+    {
+        spotLight.replenishBattery();
+    }
+
+    public Flashlight getSpotlight()
+    {
+        return spotLight;
+    }
+
+    public void setHeartRate(float rate)
+    {
+        heartBeat.pitch = rate;
+        heartBeat.volume = rate / 3;
+
+    }
+
+    public void die()
+    {
+
     }
 }

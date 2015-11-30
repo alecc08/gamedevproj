@@ -1,24 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
+using UnityStandardAssets.ImageEffects;
 
 public class SanitySystem {
 
-    static MotionBlur motionBlur;
+    private static UnityStandardAssets.ImageEffects.MotionBlur motionBlur;
 
     private static int currentInsanityLevel = 0;
 
-    private const int MAX_INSANITY = 1000;
+    private const int MAX_INSANITY = 2000;
 
-	public static void init()
+    private static MainCharacterScript mainCharScript;
+
+    public static void init(MainCharacterScript mainCharacter)
     {
-        motionBlur = GameObject.Find("CenterEyeAnchor").GetComponentInChildren<MotionBlur>();
+        mainCharScript = mainCharacter;
+        motionBlur = GameObject.Find("CenterEyeAnchor").GetComponentInChildren<UnityStandardAssets.ImageEffects.MotionBlur>();
         currentInsanityLevel = 0;
     }
 
 
     public static float getInsanityLevel()
     {
-        return currentInsanityLevel / MAX_INSANITY;
+        Debug.Log("Current insanity:" + ((float)currentInsanityLevel / MAX_INSANITY));
+        return (float)currentInsanityLevel / MAX_INSANITY;
     }
 
     public static void increaseInsanity(int amount)
@@ -43,13 +49,28 @@ public class SanitySystem {
 
     private static void UpdateEffects()
     {
+        mainCharScript.setHeartRate(1.0f + getInsanityLevel());
         if(getInsanityLevel() > 0.6f)
         {
-            motionBlur.blurAmount = getInsanityLevel();
+            motionBlur.blurAmount = getInsanityLevel() - 0.4f;
         }
         else
         {
             motionBlur.blurAmount = 0.0f;
         }
+        
+        if (getInsanityLevel() > 0.8f)
+        {
+            mainCharScript.activateGhouls();
+        }
+        else
+        {
+            mainCharScript.deactivateGhouls();
+        }
+    }
+
+    public static void Reset()
+    {
+        currentInsanityLevel = 0;
     }
 }

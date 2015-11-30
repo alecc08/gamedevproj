@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using System;
 
 public class Barrel : MonoBehaviour, Interactable {
 
@@ -21,5 +22,15 @@ public class Barrel : MonoBehaviour, Interactable {
         Debug.Log("Applying force to barrel!");
         Vector3 force = this.transform.position - player.transform.position;
         barrelBody.AddForce(force.normalized * 200);
+    }
+
+    public bool isInteractable()
+    {
+        return true;
+    }
+
+    public string getLabel()
+    {
+        return "Push";
     }
 }
