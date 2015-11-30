@@ -72,7 +72,7 @@ public class MainCharacterScript : MonoBehaviour {
 
         foreach(GameObject go in allItems)
         {
-            if(go.name.Equals("Torch"))
+            if(go.GetComponentInChildren<Light>() != null)
             {
                 allLights[sceneLightCount++] = go.GetComponentInChildren<Light>();
             }

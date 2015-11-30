@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -127,6 +121,14 @@
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\SepiaToneEffect.cs" />
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
     <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\BoneHinge.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\ExitScript.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\PickupBone.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\PlaceBone.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\WaterCollider.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\hingeScript.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\hingeStop.cs" />
+    <Compile Include="Assets\Scripts\ALevelScripts\script1.cs" />
     <Compile Include="Assets\Scripts\AltarNote.cs" />
     <Compile Include="Assets\Scripts\Barrel.cs" />
     <Compile Include="Assets\Scripts\Flashlight.cs" />
@@ -287,6 +289,7 @@
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\ghoul\shader\ghoulshader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
