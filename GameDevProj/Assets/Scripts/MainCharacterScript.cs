@@ -8,9 +8,13 @@ public class MainCharacterScript : MonoBehaviour {
     Flashlight spotLight;
     GameObject faceUiLarge; //Used for notes or hints
     GameObject faceUiSmall; //Used for "Press E to interact" text
+    GameObject faceUiHint;
 
     Text smallUiText;
     Text largeUiText;
+    Text hintText;
+
+    bool hintActive = false;
 
     AudioSource heartBeat;
 
@@ -50,6 +54,10 @@ public class MainCharacterScript : MonoBehaviour {
         smallUiText = faceUiSmall.GetComponentInChildren<Text>();
         faceUiSmall.SetActive(false);
 
+        faceUiHint = GameObject.Find("FaceUIHint");
+        hintText = faceUiHint.GetComponentInChildren<Text>();
+        faceUiHint.SetActive(false);
+
         heartBeat = GameObject.Find("Heartbeat").GetComponent<AudioSource>();
 
         SanitySystem.init(this);
@@ -70,7 +78,7 @@ public class MainCharacterScript : MonoBehaviour {
             }
         }
         Debug.Log("Found a total of " + sceneLightCount + " lights in the scene.");
-        spotLight.toggleLight();
+        
 
     }
 	
@@ -80,6 +88,14 @@ public class MainCharacterScript : MonoBehaviour {
         UpdateGamepadButtons();
         faceUiSmallActive = false;
         faceUiLargeActive = false;
+        if(Input.GetKeyUp(KeyCode.B) || buttonTwoClicked())
+        {
+            if(hintActive)
+            {
+                hintActive = false;
+                faceUiHint.SetActive(false);
+            }
+        }
         if (Input.GetKeyUp(KeyCode.F) || buttonFourClicked())
         {
             spotLight.toggleLight();
@@ -133,7 +149,7 @@ public class MainCharacterScript : MonoBehaviour {
             if(hit.collider.gameObject != null)
             {
                 GameObject hitObject = hit.collider.gameObject;
-                if(hit.distance < 2.0f && hitObject.tag.Equals("item") && hitObject.GetComponent<Interactable>() != null)
+                if(hit.distance < 2.0f && hitObject.tag.Equals("item") && hitObject.GetComponentInChildren<Interactable>() != null)
                 {
                     Interactable interactable = hitObject.GetComponent<Interactable>();
                     if(interactable.isInteractable())
@@ -243,6 +259,13 @@ public class MainCharacterScript : MonoBehaviour {
 
     public void die()
     {
+        Application.LoadLevel("DeathScene");
+    }
 
+    public void setHint(string hint)
+    {
+        hintText.text = hint;
+        faceUiHint.SetActive(true);
+        hintActive = true;
     }
 }

@@ -6,6 +6,6 @@ public class Level2NoteOnTable : MonoBehaviour, Readable  {
 	
 	public string GetText()
 	{
-		return "Can you live with\nwhat you've done?";
+		return "(H)ow can you live\nknowing\nwhat you've done?";
 	}
 }
