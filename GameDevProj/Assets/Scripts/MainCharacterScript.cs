@@ -78,6 +78,8 @@ public class MainCharacterScript : MonoBehaviour {
             }
         }
         Debug.Log("Found a total of " + sceneLightCount + " lights in the scene.");
+
+        spotLight.toggleLight();
         
 
     }
@@ -259,6 +261,7 @@ public class MainCharacterScript : MonoBehaviour {
 
     public void die()
     {
+        PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, Application.loadedLevelName);
         Application.LoadLevel("DeathScene");
     }
 

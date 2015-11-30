@@ -22,8 +22,12 @@ public class PlaceBone : MonoBehaviour, Interactable {
         if (hasBone && !placed)
         {
             placed = true;
-            
+
             bone.SetActive(true);
+        }
+        else if (!hasBone && !placed)
+        {
+            player.GetComponentInChildren<MainCharacterScript>().setHint("There's an odd opening. Maybe I can find something that will fit inside of it.");
         }
     }
 
