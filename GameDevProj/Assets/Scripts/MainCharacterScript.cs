@@ -244,7 +244,7 @@ public class MainCharacterScript : MonoBehaviour {
 
     public void rechargeBattery()
     {
-        spotLight.replenishBattery();
+        Flashlight.replenishBattery();
     }
 
     public Flashlight getSpotlight()
@@ -270,5 +270,10 @@ public class MainCharacterScript : MonoBehaviour {
         hintText.text = hint;
         faceUiHint.SetActive(true);
         hintActive = true;
+    }
+
+    public bool hintDisplayed()
+    {
+        return hintActive;
     }
 }

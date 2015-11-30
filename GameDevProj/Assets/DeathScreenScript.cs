@@ -19,6 +19,8 @@ public class DeathScreenScript : MonoBehaviour {
         }
         if(Input.anyKey && !loading && Time.timeSinceLevelLoad > 2.0f)
         {
+            Flashlight.replenishBattery();
+            SanitySystem.Reset();
             loading = true;
             Application.LoadLevel(GameConstants.LOADING);
         }
