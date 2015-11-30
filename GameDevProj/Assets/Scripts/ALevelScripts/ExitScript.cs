@@ -5,8 +5,9 @@ using Assets.Scripts;
 public class ExitScript : MonoBehaviour, Interactable {
 
     public void interact(GameObject player)
-    { 
-        //go to next level
+    {
+        PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "FinalScene");
+        Application.LoadLevel(GameConstants.LOADING);
     }
 
     public string getLabel()

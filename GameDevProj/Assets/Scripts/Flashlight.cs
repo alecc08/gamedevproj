@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Flashlight : MonoBehaviour {
 
-    float batterylevel = 1.0f;
+    static float batterylevel = 1.0f;
 
     const float TOTAL_BATTERY_LIFETIME = 180.0f;
 
@@ -105,8 +105,8 @@ public class Flashlight : MonoBehaviour {
         yield return new WaitForSeconds(Random.Range(minFlickerSpeed, maxFlickerSpeed));
     }
 
-    public void replenishBattery()
+    public static void replenishBattery()
     {
-        this.batterylevel = 1.0f;
+        batterylevel = 1.0f;
     }
 }

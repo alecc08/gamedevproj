@@ -51,11 +51,17 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -78,6 +84,10 @@
     <Compile Include="Assets\DIY_Cave_Environment\SoftFlicker.cs" />
     <Compile Include="Assets\DIY_Cave_Environment\TorchLight.cs" />
     <Compile Include="Assets\DeathScreenScript.cs" />
+    <Compile Include="Assets\Electricity\Scripts\LightningBolt.cs" />
+    <Compile Include="Assets\EnterMineScript.cs" />
+    <Compile Include="Assets\FinalLevelRoomHints.cs" />
+    <Compile Include="Assets\HangingLightScript.cs" />
     <Compile Include="Assets\Level1Script.cs" />
     <Compile Include="Assets\OVR\Moonlight\Scripts\OVRDebugHeadController.cs" />
     <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
@@ -140,6 +150,21 @@
     <Compile Include="Assets\Scripts\Hints\Hint3Script.cs" />
     <Compile Include="Assets\Scripts\Hints\HintScript.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Intro\EnterMine.cs" />
+    <Compile Include="Assets\Scripts\Intro\Sarah.cs" />
+    <Compile Include="Assets\Scripts\Intro\ScreamCollider.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2CageScroll.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2NoteOnTable.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\EButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\HButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\LButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\MainPuzzle.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\PButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\OpenGate.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoarScript.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoomGate.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoomScript.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoomScript2.cs" />
     <Compile Include="Assets\Scripts\LoadingSceneScript.cs" />
     <Compile Include="Assets\Scripts\LoadingScript.cs" />
     <Compile Include="Assets\Scripts\MainCharacterScript.cs" />
@@ -149,14 +174,16 @@
     <Compile Include="Assets\Scripts\Readable.cs" />
     <Compile Include="Assets\Scripts\SampleReadable.cs" />
     <Compile Include="Assets\Scripts\SanitySystem.cs" />
-    <Compile Include="Assets\Scripts\Sarah.cs" />
-    <Compile Include="Assets\Scripts\ScreamCollider.cs" />
     <Compile Include="Assets\Scripts\Torch.cs" />
-    <Compile Include="Assets\TutorialDoorReadable.cs" />
-    <Compile Include="Assets\TutorialKeyScript.cs" />
-    <Compile Include="Assets\TutorialLevelDoor.cs" />
+    <Compile Include="Assets\Scripts\TutorialDoorReadable.cs" />
+    <Compile Include="Assets\Scripts\TutorialKeyScript.cs" />
+    <Compile Include="Assets\Scripts\TutorialLevelDoor.cs" />
+    <Compile Include="Assets\TaserScript.cs" />
+    <Compile Include="Assets\nextScene.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Electricity\Shaders\lightning.shader" />
+    <None Include="Assets\M9_Knife\Materials\usershader.shader" />
     <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
     <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
