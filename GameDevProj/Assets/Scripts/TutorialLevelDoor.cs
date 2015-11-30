@@ -23,6 +23,7 @@ public class TutorialLevelDoor : MonoBehaviour, Interactable {
     {
         if(!locked)
         {
+            PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "Level2");
             Application.LoadLevel(GameConstants.LOADING);
         }
     }

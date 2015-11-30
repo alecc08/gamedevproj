@@ -36,6 +36,7 @@ public class TaserScript : MonoBehaviour
 
                 mainChar.transform.position = teleportTo.position;
                 mainChar.transform.rotation = teleportTo.rotation;
+
                 Destroy(this);
             }
             

@@ -79,7 +79,8 @@
     <Compile Include="Assets\DIY_Cave_Environment\TorchLight.cs" />
     <Compile Include="Assets\DeathScreenScript.cs" />
     <Compile Include="Assets\Electricity\Scripts\LightningBolt.cs" />
-    <Compile Include="Assets\FinalSceneScript.cs" />
+    <Compile Include="Assets\EnterMineScript.cs" />
+    <Compile Include="Assets\FinalLevelRoomHints.cs" />
     <Compile Include="Assets\HangingLightScript.cs" />
     <Compile Include="Assets\Level1Script.cs" />
     <Compile Include="Assets\OVR\Moonlight\Scripts\OVRDebugHeadController.cs" />
@@ -152,8 +153,6 @@
     <Compile Include="Assets\Scripts\Readable.cs" />
     <Compile Include="Assets\Scripts\SampleReadable.cs" />
     <Compile Include="Assets\Scripts\SanitySystem.cs" />
-    <Compile Include="Assets\Scripts\Sarah.cs" />
-    <Compile Include="Assets\Scripts\ScreamCollider.cs" />
     <Compile Include="Assets\Scripts\Torch.cs" />
     <Compile Include="Assets\Scripts\TutorialDoorReadable.cs" />
     <Compile Include="Assets\Scripts\TutorialKeyScript.cs" />
@@ -163,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Electricity\Shaders\lightning.shader" />
+    <None Include="Assets\M9_Knife\Materials\usershader.shader" />
     <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
     <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
