@@ -51,11 +51,17 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -144,6 +150,21 @@
     <Compile Include="Assets\Scripts\Hints\Hint3Script.cs" />
     <Compile Include="Assets\Scripts\Hints\HintScript.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Intro\EnterMine.cs" />
+    <Compile Include="Assets\Scripts\Intro\Sarah.cs" />
+    <Compile Include="Assets\Scripts\Intro\ScreamCollider.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2CageScroll.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2NoteOnTable.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\EButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\HButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\LButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\MainPuzzle.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\Level2Puzzle\PButton.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\OpenGate.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoarScript.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoomGate.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoomScript.cs" />
+    <Compile Include="Assets\Scripts\Level2Scripts\RoomScript2.cs" />
     <Compile Include="Assets\Scripts\LoadingSceneScript.cs" />
     <Compile Include="Assets\Scripts\LoadingScript.cs" />
     <Compile Include="Assets\Scripts\MainCharacterScript.cs" />

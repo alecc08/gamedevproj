@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FinalLevelRoomHints
+public class FinalLevelRoomHints : MonoBehaviour
 {
+    public static bool begin = false;
+    MainCharacterScript mainChar;
+
     static int numberOfMessagesRead = 0;
     static string[] messages =
     {
@@ -15,22 +18,33 @@ public class FinalLevelRoomHints
 
     };
 
-    public static void Begin(MainCharacterScript mainChar)
+    public void Start()
     {
-        while(numberOfMessagesRead < messages.Length)
+        mainChar = GameObject.Find("MainCharacter").GetComponentInChildren<MainCharacterScript>();
+    }
+
+    public void Update()
+    {
+        if(begin)
         {
-            if(!mainChar.hintDisplayed())
+            if (numberOfMessagesRead < messages.Length)
             {
-                mainChar.setHint(messages[numberOfMessagesRead++]);
+                if (!mainChar.hintDisplayed())
+                {
+                    mainChar.setHint(messages[numberOfMessagesRead++]);
+                }
+            }
+            else
+            {
+                if (!mainChar.hintDisplayed())
+                {
+                    Application.LoadLevel("Credits");
+                }
             }
         }
         
-        while(mainChar.hintDisplayed())
-        {
-            //wait until done reading
-        }
-
-        Application.LoadLevel("Credits");
     }
+
+
     
 }

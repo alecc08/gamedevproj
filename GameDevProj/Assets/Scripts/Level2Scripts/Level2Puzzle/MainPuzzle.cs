@@ -20,8 +20,8 @@ public class MainPuzzle : MonoBehaviour {
 			answer = "";
 		}
 		else if(answer.Equals(code)){
-			//PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, GameConstants.ALEVEL);
-			//Application.LoadLevel(GameConstants.LOADING);
+			PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "ALevel");
+			Application.LoadLevel(GameConstants.LOADING);
 		}
 
 

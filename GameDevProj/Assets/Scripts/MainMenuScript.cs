@@ -12,7 +12,7 @@ public class MainMenuScript : MonoBehaviour {
 	void Update () {
 	    if(OVRInput.Get(OVRInput.Button.Start) || Input.GetKeyUp(KeyCode.Return))
         {
-            PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "Forest(Intro)");
+            PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "ForestIntro");
             Application.LoadLevel(GameConstants.LOADING);
         }
 	}
