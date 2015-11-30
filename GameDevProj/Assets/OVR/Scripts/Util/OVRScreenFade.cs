@@ -80,7 +80,7 @@ public class OVRScreenFade : MonoBehaviour
 	/// <summary>
 	/// Fades alpha from 1.0 to 0.0
 	/// </summary>
-	IEnumerator FadeIn()
+	public IEnumerator FadeIn()
 	{
 		float elapsedTime = 0.0f;
 		fadeMaterial.color = fadeColor;
