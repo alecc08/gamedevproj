@@ -72,12 +72,14 @@ public class MainCharacterScript : MonoBehaviour {
 
         foreach(GameObject go in allItems)
         {
-            if(go.name.Equals("Torch"))
+            if(go.GetComponentInChildren<Light>() != null)
             {
                 allLights[sceneLightCount++] = go.GetComponentInChildren<Light>();
             }
         }
         Debug.Log("Found a total of " + sceneLightCount + " lights in the scene.");
+
+        spotLight.toggleLight();
         
 
     }
@@ -259,6 +261,7 @@ public class MainCharacterScript : MonoBehaviour {
 
     public void die()
     {
+        PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, Application.loadedLevelName);
         Application.LoadLevel("DeathScene");
     }
 
