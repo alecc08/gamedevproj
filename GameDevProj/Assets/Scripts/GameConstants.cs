@@ -7,6 +7,7 @@ public class GameConstants : MonoBehaviour {
     public static string LOADING = "Loading";
     public static string TEST_LEVEL = "TestLevel";
     public static string LEVEL_1 = "Level1";
+    public static string FINAL_SCENE = "FinalScene";
 
 
     public static string GET_SCENE_TO_LOAD = "loadingScene";
