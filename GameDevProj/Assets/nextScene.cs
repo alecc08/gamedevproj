@@ -17,8 +17,8 @@ public class nextScene : MonoBehaviour {
     {
         if (col.name == "MainCharacter")
         {
-            Application.LoadLevel("ALevel");
-
+            PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, GameConstants.FINAL_SCENE);
+            Application.LoadLevel(GameConstants.LOADING);
         }
     }
 }

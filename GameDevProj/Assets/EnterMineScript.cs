@@ -18,7 +18,14 @@ public class EnterMineScript : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "Level1");
-        Application.LoadLevel(GameConstants.LOADING);
+        
+        if(other.gameObject.name == "MainCharacter")
+        {
+            Debug.Log("Loading next scene!!");
+            PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "Level1");
+            Application.LoadLevel(GameConstants.LOADING);
+
+        }
+        
     }
 }

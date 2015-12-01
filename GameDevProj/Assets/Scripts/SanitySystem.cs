@@ -11,6 +11,8 @@ public class SanitySystem {
 
     private const int MAX_INSANITY = 2000;
 
+    public static bool isActive = true;
+
     private static MainCharacterScript mainCharScript;
 
     public static void init(MainCharacterScript mainCharacter)
@@ -23,7 +25,6 @@ public class SanitySystem {
 
     public static float getInsanityLevel()
     {
-        Debug.Log("Current insanity:" + ((float)currentInsanityLevel / MAX_INSANITY));
         return (float)currentInsanityLevel / MAX_INSANITY;
     }
 
@@ -49,23 +50,31 @@ public class SanitySystem {
 
     private static void UpdateEffects()
     {
-        mainCharScript.setHeartRate(1.0f + getInsanityLevel());
-        if(getInsanityLevel() > 0.6f)
-        {
-            motionBlur.blurAmount = getInsanityLevel() - 0.4f;
-        }
-        else
-        {
-            motionBlur.blurAmount = 0.0f;
-        }
+        if(isActive) {
+            mainCharScript.setHeartRate(1.0f + getInsanityLevel());
+            if(getInsanityLevel() > 0.6f)
+            {
+                motionBlur.blurAmount = getInsanityLevel() - 0.4f;
+            }
+            else
+            {
+                motionBlur.blurAmount = 0.0f;
+            }
         
-        if (getInsanityLevel() > 0.8f)
-        {
-            mainCharScript.activateGhouls();
+            if (getInsanityLevel() > 0.8f)
+            {
+                mainCharScript.activateGhouls();
+            }
+            else
+            {
+                mainCharScript.deactivateGhouls();
+            }
         }
         else
         {
             mainCharScript.deactivateGhouls();
+            mainCharScript.setHeartRate(1.0f);
+            motionBlur.blurAmount = 0.0f;
         }
     }
 

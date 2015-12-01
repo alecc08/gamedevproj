@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -80,6 +74,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Alex_door_script.cs" />
+    <Compile Include="Assets\Alex_key_script.cs" />
     <Compile Include="Assets\Campfire\Script\FireLightScript.cs" />
     <Compile Include="Assets\DIY_Cave_Environment\SoftFlicker.cs" />
     <Compile Include="Assets\DIY_Cave_Environment\TorchLight.cs" />
@@ -148,6 +144,9 @@
     <Compile Include="Assets\Scripts\Hints\Hint1Script.cs" />
     <Compile Include="Assets\Scripts\Hints\Hint2Script.cs" />
     <Compile Include="Assets\Scripts\Hints\Hint3Script.cs" />
+    <Compile Include="Assets\Scripts\Hints\Hint4Script.cs" />
+    <Compile Include="Assets\Scripts\Hints\Hint5Script.cs" />
+    <Compile Include="Assets\Scripts\Hints\Hint6Script.cs" />
     <Compile Include="Assets\Scripts\Hints\HintScript.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\Intro\EnterMine.cs" />
