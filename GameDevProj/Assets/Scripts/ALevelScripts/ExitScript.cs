@@ -6,7 +6,7 @@ public class ExitScript : MonoBehaviour, Interactable {
 
     public void interact(GameObject player)
     {
-        PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "FinalScene");
+        PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "Alex_scene");
         Application.LoadLevel(GameConstants.LOADING);
     }
 
