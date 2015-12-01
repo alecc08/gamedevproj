@@ -33,9 +33,11 @@ public class TaserScript : MonoBehaviour
                 //Teleport to room
                 taserSystem.Stop();
                 mainChar.GetComponentInChildren<Light>().enabled = false;
+                mainChar.GetComponentInChildren<MainCharacterScript>().getSpotlight().enabled = false;
                 SanitySystem.isActive = false;
                 mainChar.transform.position = teleportTo.position;
                 mainChar.transform.rotation = teleportTo.rotation;
+
                 FinalLevelRoomHints.begin = true;
                 Destroy(this);
             }
