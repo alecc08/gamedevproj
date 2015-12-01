@@ -25,6 +25,10 @@ public class PlaceBone : MonoBehaviour, Interactable {
             
             bone.SetActive(true);
         }
+        else if(!hasBone && !placed)
+        {
+            player.GetComponent<MainCharacterScript>().setHint("There's room for something to be inserted in this button.. maybe I can find something...");
+        }
     }
 
     public string getLabel()
