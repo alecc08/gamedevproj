@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MainPuzzle : MonoBehaviour {
 
+	AudioSource wrongAns;
+
 	string answer;
 	string code;
 
@@ -10,19 +12,21 @@ public class MainPuzzle : MonoBehaviour {
 	void Start () {
 		answer = "";
 		code = "1234";
+		wrongAns = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 		Debug.Log (answer);
-		if (answer.Length > 4) {
+		if (answer.Equals (code)) {
+			PlayerPrefs.SetString (GameConstants.GET_SCENE_TO_LOAD, "ALevel");
+			Application.LoadLevel (GameConstants.LOADING);
+		} else if (answer.Length >= 4) {
 			answer = "";
-		}
-		else if(answer.Equals(code)){
-			PlayerPrefs.SetString(GameConstants.GET_SCENE_TO_LOAD, "ALevel");
-			Application.LoadLevel(GameConstants.LOADING);
-		}
+			wrongAns.Play ();
+		} 
+			
 
 
 	}
