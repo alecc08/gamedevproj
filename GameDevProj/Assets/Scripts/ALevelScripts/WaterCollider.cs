@@ -21,11 +21,7 @@ public class WaterCollider : MonoBehaviour {
         {
             GameObject player = other.gameObject;
 
-            player.transform.position = new Vector3(-15.56f, 11.68f, 12.34f);
-
-            player.transform.rotation.SetLookRotation(new Vector3(0, 299.355f, 0));
-
-            SanitySystem.increaseInsanity(2000);
+            player.GetComponentInChildren<MainCharacterScript>().die();
             
         }
     }

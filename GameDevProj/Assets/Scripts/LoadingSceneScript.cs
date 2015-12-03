@@ -16,7 +16,7 @@ public class LoadingSceneScript : MonoBehaviour
     void Update()
     {
         timeSinceLoad += Time.deltaTime;
-        if(timeSinceLoad > 7.0f && async == null)
+        if(timeSinceLoad > 2.0f && async == null)
         {
             async = Application.LoadLevelAsync(PlayerPrefs.GetString(GameConstants.GET_SCENE_TO_LOAD));
         }

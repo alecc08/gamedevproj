@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-5392
-=======
 Base path: D:/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-10768
->>>>>>> dcfcc739d8afdf409449ac544c29f140f8ef74c7
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-9072
 Cmd: getPlatforms
 Cmd: preprocess
   insize=1923 outsize=467 ok=1
@@ -23,11 +18,11 @@ Cmd: preprocess
 Cmd: preprocess
   insize=435 outsize=435 ok=1
 Cmd: preprocess
-  insize=1297 outsize=609 ok=1
+  insize=1376 outsize=650 ok=1
 Cmd: preprocess
   insize=2235 outsize=619 ok=1
 Cmd: preprocess
-  insize=1615 outsize=2302 ok=1
+  insize=1615 outsize=2303 ok=1
 Cmd: preprocess
   insize=1063 outsize=406 ok=1
 Cmd: preprocess
@@ -47,7 +42,7 @@ Cmd: preprocess
 Cmd: preprocess
   insize=999 outsize=404 ok=1
 Cmd: preprocess
-  insize=2431 outsize=1147 ok=1
+  insize=2317 outsize=1097 ok=1
 Cmd: preprocess
   insize=6511 outsize=781 ok=1
 Cmd: preprocess
@@ -67,7 +62,7 @@ Cmd: preprocess
 Cmd: preprocess
   insize=902 outsize=252 ok=1
 Cmd: preprocess
-  insize=1454 outsize=2247 ok=1
+  insize=1454 outsize=2248 ok=1
 Cmd: preprocess
   insize=4608 outsize=887 ok=1
 Cmd: preprocess
@@ -160,10 +155,10 @@ Cmd: preprocess
 Cmd: preprocess
   insize=1890 outsize=547 ok=1
 Cmd: preprocess
-  insize=2488 outsize=1475 ok=1
+  insize=2607 outsize=1507 ok=1
 Cmd: compileSnippet
   error: 2 plat 4 at (83): 'vert': output parameter 'o' not completely initialized\nCompiling Vertex program with DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF
-  api=4 type=0 insize=9362 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=0
+  api=4 type=0 insize=9532 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=0
 Cmd: preprocess
   insize=4302 outsize=504 ok=1
 Cmd: preprocess
@@ -196,7 +191,7 @@ Cmd: preprocess
 Cmd: preprocess
   insize=1017 outsize=470 ok=1
 Cmd: preprocess
-  insize=1507 outsize=629 ok=1
+  insize=1569 outsize=649 ok=1
 Cmd: preprocess
   insize=5809 outsize=873 ok=1
 Cmd: preprocess
@@ -224,7 +219,7 @@ Cmd: preprocess
 Cmd: preprocess
   insize=4425 outsize=555 ok=1
 Cmd: preprocess
-  insize=300 outsize=300 ok=1
+  insize=316 outsize=316 ok=1
 Cmd: preprocess
   insize=4869 outsize=1093 ok=1
 Cmd: preprocess
@@ -238,7 +233,7 @@ Cmd: preprocess
 Cmd: preprocess
   insize=636 outsize=302 ok=1
 Cmd: preprocess
-  insize=3918 outsize=650 ok=1
+  insize=4076 outsize=684 ok=1
 Cmd: preprocess
   insize=32573 outsize=255 ok=1
 Cmd: preprocess
@@ -277,19 +272,3 @@ Cmd: preprocess
   insize=1727 outsize=682 ok=1
 Cmd: preprocess
   insize=673 outsize=248 ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=8296 outsize=4946 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=8296 outsize=4686 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=5472 outsize=4020 kw=DIRECTIONAL pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=5472 outsize=3768 kw=DIRECTIONAL pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=7967 outsize=4784 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=7967 outsize=4337 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=5362 outsize=4020 kw=DIRECTIONAL pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=5362 outsize=3768 kw=DIRECTIONAL pd= ok=1

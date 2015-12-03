@@ -54,7 +54,7 @@ public class SanitySystem {
             mainCharScript.setHeartRate(1.0f + getInsanityLevel());
             if(getInsanityLevel() > 0.6f)
             {
-                motionBlur.blurAmount = getInsanityLevel() - 0.4f;
+                motionBlur.blurAmount = getInsanityLevel();
             }
             else
             {
